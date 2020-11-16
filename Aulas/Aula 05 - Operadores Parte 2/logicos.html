@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lógicos </title>
+    <style>
+        h1, h2{
+            color: black;
+        }
+        
+        body{
+            font-weight: bolder;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // ! é tratado como operador unário (true, false).
+        // && é tratado como operador binário (dois valores lógicos)
+        // || também tratado como operador binário (dois valores lógicos)
+        // Quando temos os três operadores lógicos na mesma expressão, devemos fazer primeiro o !, depois && e por último o ||.
+        // Quando temos operadores aritméticos, relacionais e lógicos na mesma operação, primeiro devemos fazer os aritméticos, depois os relacionais e por ultimo o lógico.
+        // !, &&, ||
+        
+        document.write('<h1> Operadores Lógicos </h1>');
+        document.write('<h2> NEGAÇÃO </h2> ');
+        document.write(`O resultado de ! true é igual a: ${!true}.<br><br>`);
+        document.write(`O resultado de ! false é igual a: ${!false}.<br><br>`);
+        
+
+        document.write('<h2> CONJUNÇÃO </h2> ');
+        document.write(`O resultado de true && true é igual a: ${true && true}.<br><br>`);
+        document.write(`O resultado de true && false é igual a: ${true && false}.<br><br>`);
+        document.write(`O resultado de false && true é igaul a: ${false && true}.<br><br>`);
+        document.write(`O resultado de false && false é igual a: ${false && false}.<br><br>`); 
+        
+        
+        document.write('<h2> DISJUNÇÃO </h2> ');
+        document.write(`O resultado de true || true é igual a: ${true || true}.<br><br>`);
+        document.write(`O resultado de true || false é igual a: ${true || false}.<br><br>`);
+        document.write(`O resultado de false || true é igaul a: ${false || true}.<br><br>`);
+        document.write(`O resultado de false || false é igual a: ${false || false}.<br><br>`);
+    </script>
+</body>
+</html>

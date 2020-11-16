@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> document.white </title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n1 = prompt('Digite um número Real:');
+        alert(`O número digitado foi: ${n1.toFixed(2).replace('.',',')}`); // O replace irá substituir o '.' por ','
+        //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}): Irá converter o valor para Real.
+    </script>
+</body>
+</html>

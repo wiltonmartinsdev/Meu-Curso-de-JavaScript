@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Template String </title>
+    <style>
+        body {
+            background-color: blueviolet;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Olá Mundo! </h1>
+    <p> Ja me livre da maldição! </p>
+
+    <script>
+        // Ao utilizarmos, Template String, devemos escrever entre crase.
+        var nome = prompt('Qual é o seu nome?');
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br>`); // length: Irá contar quantos caracteres tem numa string.
+        document.write(`Em letras Maiúsculas fica: ${nome.toUpperCase()}!<br>`); // Mostra tudo em letras Maiúsculas.
+        document.write(`E em letras Minúsculas fica: ${nome.toLowerCase()}!`); // Mostra tudo em letras Minúsculas.
+    </script>
+</body>
+
+</html>
+

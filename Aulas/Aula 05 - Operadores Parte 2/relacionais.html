@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Relacionais </title>
+    <style>
+        h1, h2{
+            color: black;
+        }
+        
+        body{
+            font-weight: bolder;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Para toda expressão que tenho o operador operacional, o resultado sempre será um valor Booleano (true ou false).
+        // Quando temos operadores aritméticos e relacionais na mesma expressão, faremos primeiro os operadores aritméticos.
+        // Exemplo: a <= b - 10
+        // Não tem ordem de precedência, quem aparecer primeiro será feito primeiro. A leitura é da esquerda para a direita.
+        // >, <, >=, <=
+        var n1 = 5 > 2;
+        var n2 = 7 < 4;
+        var n3 = 8 >= 8;
+        var n4 = 9 <= 7;
+        var n5 = 5 == 5;
+        var n6 = 4 != 4;
+                
+        document.write('<h1> Operadores Relacinais  </h1>');
+        document.write(`O resultado de 5 > 2 é igual a: ${n1}.<br><br>`);
+        document.write(`O resultado de 7 < 4 é igual a: ${n2}.<br><br>`);
+        document.write(`O resultado de 8 >= 8 é igual a: ${n3}.<br><br>`);
+        document.write(`O resultado de 9 <= 7 é igual a: ${n4}.<br><br>`);
+        document.write(`O resultado de 5 == 5 é igual a: ${n5}.<br><br>`);
+        document.write(`O resultado de 4 != 4 é igual a: ${n6}.<br><br>`);
+
+        document.write('<h2> Operadores Relacionais de Identidade </h2> ');
+        var n7 = 5 == 5;
+        var n8 = 5 == '5';
+        var n9 = 5 === '5';
+        var n10 = 5 === 5;
+
+        document.write(`O resultado de 5 == 5 é igual a: ${n7}.<br><br>`);
+        document.write(`O resultado de 5 == '5' é igual a: ${n8}.<br><br>`); // O sinal de igualdade, ele não testa o tipo, nesse caso o tipo é diferente mas grandeza é a mesma ambos são 5. 
+        
+        
+        document.write('<h2> Operadores Relacionais de Igualdade Restrita </h2> ');
+        document.write(`O resultado de 5 === '5' é igual a: ${n9}.<br><br>`); // Nesse caso estamos testando se os dois 5 são idênticos (mesmo valor e tipo).
+        document.write(`O resultado de 5 === 5 é igual a: ${n10}.<br><br>`);
+    </script>
+</body>
+</html>

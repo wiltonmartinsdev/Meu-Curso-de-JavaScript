@@ -1,2 +1,2 @@
 # Meu Curso de JavaScript
- Curso do Curso em Vídeo
+ Curso de Aprendizagem: Curso em Vídeo
